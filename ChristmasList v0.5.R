@@ -10,7 +10,7 @@
 #giving.  You can set limits on the number of rings and minimum ring size.  However, if the excluded and forced
 #pairings make an impossible list, maxiter sets a stopping criteria.
 #
-#THe output is a file with the to/from list and an image of the directed graph.
+#The output is a file with the to/from list and an image of the directed graph.
 ##################################################################################################
 
 #install.packages("magick")
@@ -123,7 +123,7 @@ while (goodrun==FALSE) {
   img<-img %>% image_annotate(" Merry Christmas ", size = 30, color = "red", boxcolor = "green", location = "+180+20")
   img
 
-#export the matches and 
+#export the matches and graph as an image
   matchednames2<-matchednames %>% mutate(text=paste(santa,"will give a gift to",recipient))
   write.xlsx(matchednames2,paste(trimws(filepath),"Output Xmas List 2021.xlsx",sep=""),sheetName="XmasList")
   image_write(img, path = paste(trimws(filepath),"Output Xmas List 2021.jpg",sep=""),   format = "jpg")
