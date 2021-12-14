@@ -16,7 +16,7 @@
 #install.packages("magick")
 
 #Enter file path with Excel file list of names
-filepath="C:\\Users\\45327\\OneDrive - FirstEnergy Corp\\Documents\\Rcode\\Xmas\\"
+filepath="C:\\Users\\mstansky\\OneDrive\\Documents\\Xmas\\"
 
 #x<-winDialog(type = c("okcancel"), "Save Excel File First")
 
